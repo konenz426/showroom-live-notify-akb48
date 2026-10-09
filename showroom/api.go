@@ -47,7 +47,7 @@ func GetTodayPick() ([]Room, error) {
 
 	var rooms []Room
 	for _, room := range todayPickResponse.TimeTable {
-		if strings.Contains(room.MainName, "乃木坂46") {
+		if strings.Contains(room.MainName, "AKB48") {
 			rooms = append(rooms, room)
 		}
 	}

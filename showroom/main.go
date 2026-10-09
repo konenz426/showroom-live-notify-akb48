@@ -68,7 +68,7 @@ func HandleRequest(ctx context.Context) error {
 
 	for _, room := range rooms {
 		e := room.ParseToEvent()
-		if e.Group != "乃木坂46" {
+		if e.Group != "AKB48" {
 			continue
 		}
 		if events == nil || len(events) == 0 {
